@@ -2,8 +2,10 @@
   "name": "tdd-studies",
   "version": "1.0.0",
   "description": "TDD studies lib",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
+		"lint": "./node_modules/.bin/eslint src/*.js",
+		"prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/yvessacurae/jss-tdd/issues"
   },
-  "homepage": "https://github.com/yvessacurae/jss-tdd#readme"
+  "homepage": "https://github.com/yvessacurae/jss-tdd#readme",
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "dependencies": {
+    "eslint": "^4.16.0"
+  }
 }
